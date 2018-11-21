@@ -16,7 +16,7 @@ import org.springframework.http.MediaType;
 public class StoredProcRestController {
 
 	@Autowired
-	StoredProcServiceImpl service;
+	StoredProcService service;
 
 	private StoredProcResult callFirst(ProcParams params) {
 		return new StoredProcResult(true, "OK", service.first(params));
